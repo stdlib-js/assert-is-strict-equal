@@ -126,6 +126,22 @@ bool = isStrictEqual( isStrictEqual, isStrictEqual );
 
 <!-- /.examples -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/assert/is-same-value`][@stdlib/assert/is-same-value]: test if two arguments are the same value.
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 
 <section class="main-repo" >
 
@@ -180,6 +196,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-strict-equal/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/assert/is-same-value]: https://github.com/stdlib-js/assert-is-same-value
+
+<!-- </related-links> -->
 
 </section>
 

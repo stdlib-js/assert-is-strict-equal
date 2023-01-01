@@ -24,30 +24,38 @@ limitations under the License.
 
 > Test if two arguments are strictly equal.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/assert-is-strict-equal
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var isStrictEqual = require( '@stdlib/assert-is-strict-equal' );
+isStrictEqual = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-strict-equal@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var isStrictEqual = require( 'path/to/vendor/umd/assert-is-strict-equal/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-strict-equal@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.isStrictEqual;
+})();
+</script>
 ```
 
 #### isStrictEqual( a, b )
@@ -93,8 +101,13 @@ bool = isStrictEqual( -0.0, -0.0 );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var isStrictEqual = require( '@stdlib/assert-is-strict-equal' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-strict-equal@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var bool = isStrictEqual( true, true );
 // returns true
@@ -128,6 +141,11 @@ bool = isStrictEqual( [], [] );
 
 bool = isStrictEqual( isStrictEqual, isStrictEqual );
 // returns true
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -219,7 +237,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-same-value]: https://github.com/stdlib-js/assert-is-same-value
+[@stdlib/assert/is-same-value]: https://github.com/stdlib-js/assert-is-same-value/tree/umd
 
 <!-- </related-links> -->
 

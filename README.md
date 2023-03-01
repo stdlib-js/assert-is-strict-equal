@@ -142,7 +142,7 @@ bool = isStrictEqual( isStrictEqual, isStrictEqual );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/assert/is-same-value`][@stdlib/assert/is-same-value]</span><span class="delimiter">: </span><span class="description">test if two arguments are the same value.</span>
+-   <span class="package-name">[`@stdlib/assert-is-same-value`][@stdlib/assert/is-same-value]</span><span class="delimiter">: </span><span class="description">test if two arguments are the same value.</span>
 
 </section>
 

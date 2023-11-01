@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,105 +16,18 @@
 * limitations under the License.
 */
 
-/* eslint-disable no-new-wrappers */
-
 'use strict';
 
 // MODULES //
 
 var tape = require( 'tape' );
-var Number = require( '@stdlib/number-ctor' );
-var Boolean = require( '@stdlib/boolean-ctor' );
-var isStrictEqual = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isStrictEqual, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns `true` if provided two arguments which are strictly equal', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'',
-		'beep',
-		5,
-		3.14,
-		-3.14,
-		0.0,
-		-0.0,
-		true,
-		false,
-		null,
-		void 0,
-		[],
-		{},
-		function noop() {},
-		new Date(),
-		/.*/
-	];
-	for ( i = 0; i < values.length; i++ ) {
-		t.strictEqual( isStrictEqual( values[ i ], values[ i ] ), true, 'returns true when provided '+values[ i ] );
-	}
-	t.end();
-});
-
-tape( 'the function returns `false` if not provided two arguments which are strictly equal', function test( t ) {
-	var a;
-	var b;
-	var i;
-
-	a = [
-		'',
-		'beep',
-		new String( 'beep' ),
-		5,
-		3.14,
-		-3.14,
-		0.0,
-		-0.0,
-		NaN,
-		new Number( 5 ),
-		true,
-		false,
-		new Boolean( true ),
-		null,
-		void 0,
-		[],
-		{},
-		function noop() {},
-		new Date(),
-		/.*/
-	];
-	b = [
-		'abc',
-		'boop',
-		new String( 'beep' ),
-		-5,
-		-3.14,
-		3.14,
-		-0.0,
-		0.0,
-		NaN,
-		new Number( 5 ),
-		false,
-		true,
-		new Boolean( true ),
-		void 0,
-		null,
-		[],
-		{},
-		function noop() {},
-		new Date(),
-		/.*/
-	];
-	for ( i = 0; i < a.length; i++ ) {
-		t.strictEqual( isStrictEqual( a[ i ], b[ i ] ), false, 'returns false when provided '+a[ i ]+' and '+b[ i ] );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });

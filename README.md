@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isStrictEqual from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-strict-equal@deno/mod.js';
+import isStrictEqual from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-strict-equal@v0.2.0-deno/mod.js';
 ```
 
 #### isStrictEqual( a, b )
@@ -89,7 +89,7 @@ bool = isStrictEqual( -0.0, -0.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import isStrictEqual from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-strict-equal@deno/mod.js';
+import isStrictEqual from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-strict-equal@v0.2.0-deno/mod.js';
 
 var bool = isStrictEqual( true, true );
 // returns true
